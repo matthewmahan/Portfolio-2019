@@ -1,0 +1,49 @@
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 5%;
+  margin: auto;
+}
+
+.container-wide {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 5%;
+  margin: auto;
+}
+
+.source-serif {
+  font-family: 'Source Serif Pro', serif;
+}
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+.material-icons {
+  vertical-align: middle;
+}
+
+.uline-anni {
+  position: relative;
+  text-decoration: none;
+}
+
+.uline-anni:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: #777;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.uline-anni:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
